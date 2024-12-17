@@ -1,0 +1,16 @@
+server:
+  port: 8081
+netty:
+  port: 8089
+jwt:
+  tokenHeader: Authorization
+  secret: wangzhenzhong
+  expiration: 6048000
+  tokenHead: Bearer
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/wechat?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false&allowMultiQueries=true
+    type: com.zaxxer.hikari.HikariDataSource
+    username: root
+    password: 123456
