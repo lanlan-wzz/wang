@@ -59,12 +59,12 @@ public class RegisterProtocolHandler extends SimpleChannelInboundHandler<Registe
             log.debug("[用户{}登录成功]", user.getWechat());
         }
         ByteBuf buffer = ctx.alloc()
-            .buffer();
+                .buffer();
         byte[] bytes = JSON.toJSONString(R.ok("channel注册成功"))
-            .getBytes(StandardCharsets.UTF_8);
+                .getBytes(StandardCharsets.UTF_8);
         buffer.writeBytes(bytes);
         ctx.channel()
-            .writeAndFlush(new TextWebSocketFrame(buffer));
+                .writeAndFlush(new TextWebSocketFrame(buffer));
     }
 
 }
