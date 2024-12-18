@@ -12,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class WeChatApplication {
 
     public static void main(String[] args) {
+        // 启动应用
         SpringApplication.run(WeChatApplication.class, args);
     }
 
